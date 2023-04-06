@@ -66,13 +66,6 @@ async function onSearchImg(e) {
   hitsMessages(hits);
 }
 
-function errorMessage() {
-  Notify.failure(
-    'Sorry, there are no images matching your search query. Please try again.',
-    { timeout: 3000 }
-  );
-}
-
 function renderItemList(item) {
   const listItem = item
     .map(
